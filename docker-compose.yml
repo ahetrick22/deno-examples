@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    container_name: deno-local
+    ports:
+      - "8000:8000"
+  web2:
+    build: .
+    container_name: deno-local2
+    ports:
+      - "8001:8000"
